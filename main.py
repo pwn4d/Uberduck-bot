@@ -6,7 +6,7 @@ import uberduck
 ducky = uberduck.UberDuck('pub_dselihpqtypbbwkxhj', 'pk_7a26317f-d500-4abd-87d8-83fb6721cc8c')
 voices = uberduck.get_voices(return_only_names = True)
 voices_message = ''
-TOKEN = 'OTI4NjI4ODY1MTM0MzkxMzQ2.GZSFQN.B4pbbxIRYJB68u0dDfN_INvRDfYD3U6-sFmoZU'
+TOKEN = 'OTI4NjI4ODY1MTM0MzkxMzQ2.GE3DiF.bA9MUVjQ4170xEyDpg2qSEz8nlbUwOGn-M9HqE'
 
 
 
@@ -124,7 +124,7 @@ async def on_message(message):
 
     if message.content == '?listvoices':
         global voices_message
-1
+
         await message.reply('Check Your Dms :wink:')
 
 
@@ -132,6 +132,7 @@ async def on_message(message):
         for voice in sorted(voices): # sorting the voice list in alphabetical order
                 voices_message = voices_message + f'{voice}\n'
 
+        print(voices_message)
         await message.reply(voices_message)
 
 
