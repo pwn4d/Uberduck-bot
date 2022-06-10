@@ -3,10 +3,10 @@ import random
 import pyttsx3
 import uberduck
 
-ducky = uberduck.UberDuck('pub_dselihpqtypbbwkxhj', 'pk_7a26317f-d500-4abd-87d8-83fb6721cc8c')
+ducky = uberduck.UberDuck('', '')
 voices = uberduck.get_voices(return_only_names = True)
 voices_message = ''
-TOKEN = 'OTI4NjI4ODY1MTM0MzkxMzQ2.GZSFQN.B4pbbxIRYJB68u0dDfN_INvRDfYD3U6-sFmoZU'
+TOKEN = ''
 
 
 
